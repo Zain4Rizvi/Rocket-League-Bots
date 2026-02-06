@@ -1,0 +1,50 @@
+{
+    "cumulative_timesteps": 133011256,
+    "cumulative_model_updates": 7975,
+    "policy_average_reward": -0.10057925445939175,
+    "epoch": 2659,
+    "ts_since_last_save": 1000144,
+    "reward_running_stats": {
+        "mean": [
+            -0.0038555217906832695
+        ],
+        "var": [
+            2345008.0
+        ],
+        "shape": [
+            1
+        ],
+        "count": 399000
+    },
+    "wandb_run_id": "3o6scbnn",
+    "wandb_project": "rlgym-ppo",
+    "wandb_entity": "blackhawksrock9696-university-of-toronto",
+    "wandb_group": "unnamed-runs",
+    "wandb_config": {
+        "n_proc": 8,
+        "min_inference_size": 7,
+        "timestep_limit": 1000000000,
+        "exp_buffer_size": 150000,
+        "ts_per_iteration": 50000,
+        "standardize_returns": true,
+        "standardize_obs": false,
+        "policy_layer_sizes": [
+            512,
+            512
+        ],
+        "critic_layer_sizes": [
+            512,
+            512
+        ],
+        "ppo_epochs": 1,
+        "ppo_batch_size": 50000,
+        "ppo_minibatch_size": 50000,
+        "ppo_ent_coef": 0.01,
+        "ppo_clip_range": 0.2,
+        "gae_lambda": 0.95,
+        "gae_gamma": 0.99,
+        "policy_lr": 5e-05,
+        "critic_lr": 5e-05,
+        "shm_buffer_size": 8192
+    }
+}

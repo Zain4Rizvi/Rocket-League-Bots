@@ -1,0 +1,15 @@
+[project]
+name = "rocket-league-bots"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rlgym-ppo",
+    "rlgym-sim",
+    "rlgym[all]>=2.0.1",
+]
+
+[tool.uv.sources]
+rlgym-sim = { git = "https://github.com/AechPro/rocket-league-gym-sim", rev = "main" }
+rlgym-ppo = { git = "https://github.com/AechPro/rlgym-ppo" }
